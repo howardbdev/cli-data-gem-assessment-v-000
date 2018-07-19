@@ -1,6 +1,9 @@
 class TrendingThisWeek::CLI
+<<<<<<< HEAD
   # we talked about some refactoring here to reduce the size of your #cities method
   # how is that coming along?
+=======
+>>>>>>> 1dc45dd5d28966a8d07d3d43782722c7ff1dd5b4
 
   def call
   puts  'Welcome to trending spots where you can see the top trending spots from the tops cities in the US'

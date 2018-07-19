@@ -2,6 +2,7 @@ class TrendingThisWeek::Spots
     attr_accessor :name, :location, :type, :rank, :rank_change,  :url, :address, :city, :phone_number, :features
 
 
+<<<<<<< HEAD
   # we should really be delcaring any class variables here, such as @@all
 
   # instead of making a class method called 'this_wee', why not just have this
@@ -16,6 +17,12 @@ class TrendingThisWeek::Spots
     spot.rank_change = spots[:rank_change]
     spot.url = spots[:spot_url]
     @@all << spot
+=======
+
+
+  def self.all
+    @@all
+>>>>>>> 1dc45dd5d28966a8d07d3d43782722c7ff1dd5b4
   end
 =end
 
@@ -25,7 +32,10 @@ class TrendingThisWeek::Spots
 # a bit more clean and adherent to the SRP (Single Responsibility Principle)
 
   def self.this_week(url)
+<<<<<<< HEAD
     # move this class variable declaration up below your attr_accessors ^^
+=======
+>>>>>>> 1dc45dd5d28966a8d07d3d43782722c7ff1dd5b4
     @@all = []
   TrendingThisWeek::Scraper.scraper(url).each do | spots|
           spot =  self.new
@@ -38,10 +48,13 @@ class TrendingThisWeek::Spots
           @@all << spot
       end
       @@all
+<<<<<<< HEAD
   end
 
   def self.all
     @@all
+=======
+>>>>>>> 1dc45dd5d28966a8d07d3d43782722c7ff1dd5b4
   end
 
   def self.spot_more_info(spot_instance)
